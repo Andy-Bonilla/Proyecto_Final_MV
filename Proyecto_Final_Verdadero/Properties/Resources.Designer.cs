@@ -73,6 +73,26 @@ namespace Proyecto_Final_Verdadero.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cuadratica {
+            get {
+                object obj = ResourceManager.GetObject("Cuadratica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cuadratica1 {
+            get {
+                object obj = ResourceManager.GetObject("Cuadratica1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Diego {
             get {
                 object obj = ResourceManager.GetObject("Diego", resourceCulture);

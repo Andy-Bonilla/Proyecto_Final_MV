@@ -76,5 +76,19 @@ namespace Proyecto_Final_Verdadero
                 pnlMenu.Width = 300;
             }
         }
+
+        private void btnCuadratica_Click(object sender, EventArgs e)
+        {
+            #region muestra formulario
+            pnlPrincipal.Controls.Clear();//Limpiamos panel
+            Form Pantalla = null;//Definimos variable pantalla
+
+            Pantalla = new Forms.Cuadratica();//Pantalla es igual al form Creditos
+            Pantalla.TopLevel = false;//Definimos como pantalla secundaria
+            pnlPrincipal.Controls.Add(Pantalla);//Añadimos la pantalla al panel
+            Pantalla.Show();//Mostramos la pantalla
+            #endregion
+            dplMenu();
+        }
     }
 }

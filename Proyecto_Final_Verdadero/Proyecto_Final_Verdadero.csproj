@@ -80,6 +80,12 @@
     <Compile Include="Forms\Creditos.Designer.cs">
       <DependentUpon>Creditos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Cuadratica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Cuadratica.Designer.cs">
+      <DependentUpon>Cuadratica.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuNew.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Creditos.resx">
       <DependentUpon>Creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cuadratica.resx">
+      <DependentUpon>Cuadratica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuNew.resx">
       <DependentUpon>MenuNew.cs</DependentUpon>
@@ -153,6 +162,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuadratica.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
