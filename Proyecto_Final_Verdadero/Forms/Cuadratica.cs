@@ -12,12 +12,17 @@ namespace Proyecto_Final_Verdadero.Forms
 {
     public partial class Cuadratica : Form
     {
+        private utileria utl = new utileria();
+
         public string a = "a", b = "b", c = "c";
+
         public Cuadratica()
         {
             InitializeComponent();
+            utl.txtSoloNumeros(txtA);
+            utl.txtSoloNumeros(txtB);
         }
-        
+
         #region Asignacion De Variables
         private void txtA_TextChanged(object sender, EventArgs e)
         {
@@ -30,6 +35,7 @@ namespace Proyecto_Final_Verdadero.Forms
             this.c = (txtC.Text == "") ? "c" : txtC.Text;
             AsignarValores();
         }
+
         private void txtB_TextChanged(object sender, EventArgs e)
         {
             this.b = (txtB.Text == "") ? "b" : txtB.Text;
@@ -62,5 +68,6 @@ namespace Proyecto_Final_Verdadero.Forms
             lblDeno.Text = "2(" + this.a + ")";
         }
         #endregion
+
     }
 }
