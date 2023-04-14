@@ -31,6 +31,7 @@ namespace Proyecto_Final_Verdadero
         }
         #endregion
 
+        //Boton que manda a llamar los creditos
         private void btnCreditos_Click(object sender, EventArgs e)
         {
             #region muestra formulario
@@ -45,9 +46,13 @@ namespace Proyecto_Final_Verdadero
             pnlPrincipal.Tag = Pantalla;
             Pantalla.Show();//Mostramos la pantalla
             #endregion
-            dplMenu();
+            if (pnlMenu.Width == 280)
+            {
+                dplMenu(false);
+            }
         }
 
+        //Boton que llama el menu
         private void btnMenu_Click(object sender, EventArgs e)
         {
             if (pnlMenu.Width == 40)
@@ -64,6 +69,7 @@ namespace Proyecto_Final_Verdadero
         {
         }
 
+        //Funcion que expande y encoge el menu lateral
         private void dplMenu(bool ini = true)
         {
             if (ini)
@@ -89,7 +95,10 @@ namespace Proyecto_Final_Verdadero
             pnlPrincipal.Controls.Add(Pantalla);//Añadimos la pantalla al panel
             Pantalla.Show();//Mostramos la pantalla
             #endregion
-            dplMenu();
+            if (pnlMenu.Width == 280)
+            {
+                dplMenu(false);
+            }
         }
     }
 }
