@@ -12,9 +12,16 @@ namespace Proyecto_Final_Verdadero
 {
     public partial class MenuNew : Form
     {
+        //Llamamos nuetro archivo de utileria para usar las funciones que declaramos en el.
+        private utileria utl = new utileria();
+
         public MenuNew()
         {
             InitializeComponent();
+        }
+
+        private void MenuNew_Load(object sender, EventArgs e)
+        {
         }
 
         #region Eventos
@@ -31,6 +38,21 @@ namespace Proyecto_Final_Verdadero
         }
         #endregion
 
+        #region Botones
+
+        //Boton que llama el menu
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (pnlMenu.Width == 40)
+            {
+                dplMenu();
+            }
+            else
+            {
+                dplMenu(false);
+            }
+        }
+
         //Boton que manda a llamar los creditos
         private void btnCreditos_Click(object sender, EventArgs e)
         {
@@ -46,28 +68,28 @@ namespace Proyecto_Final_Verdadero
             pnlPrincipal.Tag = Pantalla;
             Pantalla.Show();//Mostramos la pantalla
             #endregion
+
             if (pnlMenu.Width == 280)
             {
                 dplMenu(false);
             }
         }
 
-        //Boton que llama el menu
-        private void btnMenu_Click(object sender, EventArgs e)
+        //Boton que llama el Form Cuadratica
+        private void btnCuadratica_Click(object sender, EventArgs e)
         {
-            if (pnlMenu.Width == 40)
-            {
-                dplMenu();
-            }
-            else
+            //Mostramos formulario desde nuestra Funcion de utileria.
+            utl.MostrarForm(pnlPrincipal, new Forms.Cuadratica());
+
+            if (pnlMenu.Width == 280)
             {
                 dplMenu(false);
             }
         }
 
-        private void MenuNew_Load(object sender, EventArgs e)
-        {
-        }
+        #endregion
+
+        #region Funciones
 
         //Funcion que expande y encoge el menu lateral
         private void dplMenu(bool ini = true)
@@ -84,21 +106,13 @@ namespace Proyecto_Final_Verdadero
             }
         }
 
-        private void btnCuadratica_Click(object sender, EventArgs e)
-        {
-            #region muestra formulario
-            pnlPrincipal.Controls.Clear();//Limpiamos panel
-            Form Pantalla = null;//Definimos variable pantalla
+        #endregion
 
-            Pantalla = new Forms.Cuadratica();//Pantalla es igual al form Creditos
-            Pantalla.TopLevel = false;//Definimos como pantalla secundaria
-            pnlPrincipal.Controls.Add(Pantalla);//Añadimos la pantalla al panel
-            Pantalla.Show();//Mostramos la pantalla
-            #endregion
-            if (pnlMenu.Width == 280)
-            {
-                dplMenu(false);
-            }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Mostramos formulario en panel desde clase utileria
+            utl.MostrarForm(pnlPrincipal, new Forms.Cajero());
         }
+
     }
 }
