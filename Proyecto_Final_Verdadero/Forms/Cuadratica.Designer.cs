@@ -63,7 +63,7 @@
             this.lblRaiz.Font = new System.Drawing.Font("Microsoft YaHei", 40.2F, System.Drawing.FontStyle.Bold);
             this.lblRaiz.Location = new System.Drawing.Point(641, 61);
             this.lblRaiz.Name = "lblRaiz";
-            this.lblRaiz.Size = new System.Drawing.Size(432, 90);
+            this.lblRaiz.Size = new System.Drawing.Size(435, 91);
             this.lblRaiz.TabIndex = 2;
             this.lblRaiz.Text = "(b)²- 4(a)(c)";
             // 
@@ -83,7 +83,7 @@
             this.lblB1.Font = new System.Drawing.Font("Microsoft YaHei", 40.2F, System.Drawing.FontStyle.Bold);
             this.lblB1.Location = new System.Drawing.Point(302, 61);
             this.lblB1.Name = "lblB1";
-            this.lblB1.Size = new System.Drawing.Size(215, 90);
+            this.lblB1.Size = new System.Drawing.Size(218, 91);
             this.lblB1.TabIndex = 6;
             this.lblB1.Text = "-(b)±";
             // 
@@ -94,7 +94,7 @@
             this.lblDeno.Font = new System.Drawing.Font("Microsoft YaHei", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeno.Location = new System.Drawing.Point(588, 208);
             this.lblDeno.Name = "lblDeno";
-            this.lblDeno.Size = new System.Drawing.Size(170, 90);
+            this.lblDeno.Size = new System.Drawing.Size(172, 91);
             this.lblDeno.TabIndex = 7;
             this.lblDeno.Text = "2(a)";
             // 
@@ -134,7 +134,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(12, 396);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 44);
+            this.label5.Size = new System.Drawing.Size(77, 44);
             this.label5.TabIndex = 10;
             this.label5.Text = "b =";
             // 
@@ -163,7 +163,7 @@
             this.lblA.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblA.Location = new System.Drawing.Point(12, 342);
             this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(73, 44);
+            this.lblA.Size = new System.Drawing.Size(74, 44);
             this.lblA.TabIndex = 13;
             this.lblA.Text = "a =";
             // 
@@ -174,7 +174,7 @@
             this.lblC.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblC.Location = new System.Drawing.Point(12, 450);
             this.lblC.Name = "lblC";
-            this.lblC.Size = new System.Drawing.Size(71, 44);
+            this.lblC.Size = new System.Drawing.Size(72, 44);
             this.lblC.TabIndex = 14;
             this.lblC.Text = "c =";
             // 
@@ -201,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 626);
+            this.ClientSize = new System.Drawing.Size(1132, 623);
             this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.btnLimp);
             this.Controls.Add(this.lblC);

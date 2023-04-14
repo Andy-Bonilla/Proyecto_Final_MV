@@ -21,5 +21,11 @@ namespace Proyecto_Final_Verdadero.Forms
         {
             this.Close();
         }
+
+        private void Creditos_Load(object sender, EventArgs e)
+        {
+            picb1.Width = 250;
+            picb1.Height = 250;
+        }
     }
 }

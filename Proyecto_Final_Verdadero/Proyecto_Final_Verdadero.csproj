@@ -94,6 +94,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="utileria.cs" />
     <EmbeddedResource Include="Forms\Creditos.resx">
       <DependentUpon>Creditos.cs</DependentUpon>
@@ -106,14 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -126,30 +126,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FondoCreditos.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Menu.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Abel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Diego.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fabio.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Leon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Samuel.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ulises.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -165,6 +141,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Cuadratica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abel-modified %28Custom%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abel-modified.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -21,6 +21,7 @@ namespace Proyecto_Final_Verdadero.Forms
             InitializeComponent();
             utl.txtSoloNumeros(txtA);
             utl.txtSoloNumeros(txtB);
+            utl.txtSoloNumeros(txtC);
         }
 
         #region Asignacion De Variables

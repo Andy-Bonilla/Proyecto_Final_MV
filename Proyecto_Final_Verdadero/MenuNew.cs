@@ -39,7 +39,10 @@ namespace Proyecto_Final_Verdadero
 
             Pantalla = new Forms.Creditos();//Pantalla es igual al form Creditos
             Pantalla.TopLevel = false;//Definimos como pantalla secundaria
+            Pantalla.FormBorderStyle = FormBorderStyle.None;
+            Pantalla.Dock = DockStyle.Fill;
             pnlPrincipal.Controls.Add(Pantalla);//Añadimos la pantalla al panel
+            pnlPrincipal.Tag = Pantalla;
             Pantalla.Show();//Mostramos la pantalla
             #endregion
             dplMenu();
@@ -47,32 +50,31 @@ namespace Proyecto_Final_Verdadero
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if (pnlMenu.Width == 48)
+            if (pnlMenu.Width == 40)
+            {
+                dplMenu();
+            }
+            else
             {
                 dplMenu(false);
             }
-            else 
-            {
-                dplMenu();
-            }            
         }
 
         private void MenuNew_Load(object sender, EventArgs e)
         {
-            dplMenu();
         }
 
         private void dplMenu(bool ini = true)
         {
             if (ini)
             {
-                btnMenu.Location = new Point(56, 41);
-                pnlMenu.Width = 48;
+                btnMenu.Left += 240;
+                pnlMenu.Width += 240;
             }
             else
             {
-                btnMenu.Location = new Point(308, 41);
-                pnlMenu.Width = 300;
+                btnMenu.Left -= 240;
+                pnlMenu.Width -= 240;
             }
         }
 

@@ -30,7 +30,7 @@ namespace Proyecto_Final_Verdadero
         /// Función que recibe como parametro un TextBox y no permite numeros solo letras.
         /// </summary>
         /// <param name="textBox">TextBox a validar.</param>
-        public static void txtSoloLetras(TextBox textBox)
+        public void txtSoloLetras(TextBox textBox)
         {
             textBox.KeyPress += (sender, e) =>
             {
