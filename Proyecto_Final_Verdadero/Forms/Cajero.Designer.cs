@@ -30,18 +30,18 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnEntrada = new System.Windows.Forms.Button();
+            this.txtCan = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(40, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(53, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1064, 40);
+            this.panel2.Size = new System.Drawing.Size(1419, 49);
             this.panel2.TabIndex = 11;
             // 
             // panel1
@@ -51,35 +51,38 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(40, 591);
+            this.panel1.Size = new System.Drawing.Size(53, 727);
             this.panel1.TabIndex = 10;
             // 
-            // button1
+            // btnEntrada
             // 
-            this.button1.Location = new System.Drawing.Point(92, 192);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 24);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEntrada.Location = new System.Drawing.Point(123, 236);
+            this.btnEntrada.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEntrada.Name = "btnEntrada";
+            this.btnEntrada.Size = new System.Drawing.Size(73, 30);
+            this.btnEntrada.TabIndex = 12;
+            this.btnEntrada.Text = "Aceptar";
+            this.btnEntrada.UseVisualStyleBackColor = true;
+            this.btnEntrada.Click += new System.EventHandler(this.btnEntrada_Click);
             // 
-            // textBox1
+            // txtCan
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 145);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 13;
+            this.txtCan.Location = new System.Drawing.Point(167, 178);
+            this.txtCan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCan.Name = "txtCan";
+            this.txtCan.Size = new System.Drawing.Size(132, 22);
+            this.txtCan.TabIndex = 13;
             // 
             // Cajero
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 591);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1472, 727);
+            this.Controls.Add(this.txtCan);
+            this.Controls.Add(this.btnEntrada);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Cajero";
             this.Text = "Cajero";
             this.Load += new System.EventHandler(this.Cajero_Load);
@@ -92,7 +95,7 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnEntrada;
+        private System.Windows.Forms.TextBox txtCan;
     }
 }

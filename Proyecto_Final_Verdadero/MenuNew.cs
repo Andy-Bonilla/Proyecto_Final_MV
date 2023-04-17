@@ -56,19 +56,7 @@ namespace Proyecto_Final_Verdadero
         //Boton que manda a llamar los creditos
         private void btnCreditos_Click(object sender, EventArgs e)
         {
-            #region muestra formulario
-            pnlPrincipal.Controls.Clear();//Limpiamos panel
-            Form Pantalla = null;//Definimos variable pantalla
-
-            Pantalla = new Forms.Creditos();//Pantalla es igual al form Creditos
-            Pantalla.TopLevel = false;//Definimos como pantalla secundaria
-            Pantalla.FormBorderStyle = FormBorderStyle.None;
-            Pantalla.Dock = DockStyle.Fill;
-            pnlPrincipal.Controls.Add(Pantalla);//Añadimos la pantalla al panel
-            pnlPrincipal.Tag = Pantalla;
-            Pantalla.Show();//Mostramos la pantalla
-            #endregion
-
+            utl.MostrarForm(pnlPrincipal, new Forms.Creditos());
             if (pnlMenu.Width == 280)
             {
                 dplMenu(false);
@@ -80,7 +68,6 @@ namespace Proyecto_Final_Verdadero
         {
             //Mostramos formulario desde nuestra Funcion de utileria.
             utl.MostrarForm(pnlPrincipal, new Forms.Cuadratica());
-
             if (pnlMenu.Width == 280)
             {
                 dplMenu(false);
@@ -108,11 +95,24 @@ namespace Proyecto_Final_Verdadero
 
         #endregion
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCajero_Click(object sender, EventArgs e)
         {
             //Mostramos formulario en panel desde clase utileria
             utl.MostrarForm(pnlPrincipal, new Forms.Cajero());
+            if (pnlMenu.Width == 280)
+            {
+                dplMenu(false);
+            }
         }
 
+        private void btnAgudos_Click(object sender, EventArgs e)
+        {
+            //Mostramos formulario en panel desde clase utileria
+            utl.MostrarForm(pnlPrincipal, new Forms.Angulos());
+            if (pnlMenu.Width == 280)
+            {
+                dplMenu(false);
+            }
+        }
     }
 }

@@ -140,7 +140,28 @@
         2mXBA7xU/ocBh8NBer0fcWHuaVcjWGAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnHerencia.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DwAACw8BkvkDpQAAADlJREFUSEtjGAWDCzxi9dR9zOFdTgkGmQE1DhOAJB+xe3ZQhPFZMApGABhNpqNg
+        CIDRZDoKyAAMDADrGrOtY2TjVQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnCajero.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DwAACw8BkvkDpQAAADlJREFUSEtjGAWDCzxi9dR9zOFdTgkGmQE1DhOAJB+xe3ZQhPFZMApGABhNpqNg
+        CIDRZDoKyAAMDADrGrOtY2TjVQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnCramer.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DwAACw8BkvkDpQAAADlJREFUSEtjGAWDCzxi9dR9zOFdTgkGmQE1DhOAJB+xe3ZQhPFZMApGABhNpqNg
+        CIDRZDoKyAAMDADrGrOtY2TjVQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnAgudos.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DwAACw8BkvkDpQAAADlJREFUSEtjGAWDCzxi9dR9zOFdTgkGmQE1DhOAJB+xe3ZQhPFZMApGABhNpqNg

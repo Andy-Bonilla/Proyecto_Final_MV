@@ -19,10 +19,20 @@ namespace Proyecto_Final_Verdadero
         {
             textbox.KeyPress += new KeyPressEventHandler((sender, e) =>
             {
-                // Verificar si la tecla presionada es un número o no
-                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                // Verificar si la tecla presionada es un número (0-9), un signo negativo o una tecla de control (por ejemplo, retroceso)
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '-')
                 {
                     e.Handled = true;
+                }
+
+                // Permitir el signo negativo solo al principio del texto
+                if (e.KeyChar == '-')
+                {
+                    TextBox textBox = (TextBox)sender;
+                    if (textBox.SelectionStart != 0 || textBox.Text.Contains("-"))
+                    {
+                        e.Handled = true;
+                    }
                 }
             });
         }
@@ -71,11 +81,11 @@ namespace Proyecto_Final_Verdadero
         /// <param name="Alto">(Opcional) Alto del Boton Default: 50</param>
         /// <param name="Border">(Opcional) Si el Boton contara con border Default: No</param>
         /// <param name="BorderColor">(Opcional) Si Border True define el color del borde Default: Negro</param>
-        public void StyleBtn(Button bnt, Color? backColor = null, Color? textColor = null, int Ancho = 150, int Alto = 40, bool Border = false, Color? BorderColor = null)
+        public void StyleBtn(Button bnt, Color? backColor = null, Color? textColor = null, int Ancho = 150, int Alto = 40, bool Border = false, Color? BorderColor = null, int FontSize = 14, string Font = "Arial")
         {
-            Font fuente = new Font("MS Reference Sans Serif", 14);
+            Font fuente = new Font(Font, FontSize);
             bnt.FlatStyle = FlatStyle.Flat;
-            bnt.FlatAppearance.BorderSize = (Border) ? 1 : 0;
+            bnt.FlatAppearance.BorderSize = (Border) ? 5 : 0;
             bnt.Size = new Size(Ancho, Alto);
             bnt.BackColor = (backColor == null) ? Color.AliceBlue : (Color)backColor;
             bnt.ForeColor = (textColor == null) ? Color.White : (Color)textColor;

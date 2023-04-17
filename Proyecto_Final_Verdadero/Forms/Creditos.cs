@@ -12,20 +12,23 @@ namespace Proyecto_Final_Verdadero.Forms
 {
     public partial class Creditos : Form
     {
+        utileria utl = new utileria();
+
         public Creditos()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void Creditos_Load(object sender, EventArgs e)
         {
+            utl.StyleBtn(btnRegre, Color.White, Color.Black, 125, 40, true, Color.DarkRed, 15, "Cooper Black");
             picb1.Width = 250;
             picb1.Height = 250;
+        }
+
+        private void btnRegre_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

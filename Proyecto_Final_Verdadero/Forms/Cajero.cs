@@ -33,21 +33,27 @@ namespace Proyecto_Final_Verdadero.Forms
                 writer.WriteLine(Saldo);//Con WriteLine escribimos el saldo
                 writer.Close();//Cerramos el archivo
             }
-            utl.txtSoloNumeros(textBox1);
-            utl.StyleBtn(button1, Color.MediumSlateBlue);
+            utl.txtSoloNumeros(txtCan);
+            utl.StyleBtn(btnEntrada, Color.MediumSlateBlue);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnEntrada_Click(object sender, EventArgs e)
         {
-            StreamReader reader = new StreamReader("Cuenta.txt");//Abrimos el archivo en modo lectura
-            string linea = reader.ReadLine();//Leemos la linea donde esta la cantidad
-            double Cuenta = double.Parse(linea);//Convertimos a double la cantidad para poder usarla
-            reader.Close();//Cerramos el lector del archivo
-            double CuentaNew = Convert.ToDouble(textBox1.Text) + Cuenta;//Nuevo Double donde ponemos el valor actual mas el valor ingresado en el txt
-            StreamWriter writer = new StreamWriter("Cuenta.txt", false);//Abrimos el archivo en modo escritura
-            writer.WriteLine(CuentaNew);//Reescribimos el archivo con la nueva cantidad
-            writer.Close();// Cerramos el archivo
-
+            if (txtCan.Text == "")
+            {
+                MessageBox.Show("Por favor, rellene el espacio vacío.", "Error #1", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                StreamReader reader = new StreamReader("Cuenta.txt");//Abrimos el archivo en modo lectura
+                string linea = reader.ReadLine();//Leemos la linea donde esta la cantidad
+                double Cuenta = double.Parse(linea);//Convertimos a double la cantidad para poder usarla
+                reader.Close();//Cerramos el lector del archivo
+                double CuentaNew = Convert.ToDouble(txtCan.Text) + Cuenta;//Nuevo Double donde ponemos el valor actual mas el valor ingresado en el txt
+                StreamWriter writer = new StreamWriter("Cuenta.txt", false);//Abrimos el archivo en modo escritura
+                writer.WriteLine(CuentaNew);//Reescribimos el archivo con la nueva cantidad
+                writer.Close();// Cerramos el archivo
+            }
         }
     }
 }

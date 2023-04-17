@@ -16,5 +16,10 @@ namespace Proyecto_Final_Verdadero.Forms
         {
             InitializeComponent();
         }
+
+        private void Angulos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
