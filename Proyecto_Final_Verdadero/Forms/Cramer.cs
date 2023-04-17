@@ -55,17 +55,17 @@ namespace Proyecto_Final_Verdadero.Forms
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
-            double a = Convert.ToDouble(txtA.Text);
-            double b = Convert.ToDouble(txtB.Text);
-            double c = Convert.ToDouble(txtC.Text);
-            double d = Convert.ToDouble(txtD.Text);
-
             if (txtA.Text == "" || txtB.Text == "" || txtC.Text == "" || txtD.Text == "")
             {
                 MessageBox.Show("Por favor, rellene los espacios vacíos.", "Error #1", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
+                double a = Convert.ToDouble(txtA.Text);
+                double b = Convert.ToDouble(txtB.Text);
+                double c = Convert.ToDouble(txtC.Text);
+                double d = Convert.ToDouble(txtD.Text);
+
                 double det = (a * d) - (b * c);
                 txtDet.Text = Math.Round(det, 2).ToString();
             }
