@@ -58,11 +58,8 @@ namespace Proyecto_Final_Verdadero.Forms
         //Boton Que Limpia
         private void btnLimp_Click(object sender, EventArgs e)
         {
-            txtA.Text = "";
-            txtB.Text = "";
-            txtC.Text = "";
-            txtX1.Text = "";
-            txtX2.Text = "";
+            Control[] txts = new Control[] { txtA, txtB, txtC, txtX1, txtX2 };
+            utl.LimpTxt(txts);
         }
 
         private void btnCalc_Click(object sender, EventArgs e)

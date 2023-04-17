@@ -161,6 +161,7 @@
             this.btnCramer.TabIndex = 3;
             this.btnCramer.Text = "Regla De Cramer";
             this.btnCramer.UseVisualStyleBackColor = false;
+            this.btnCramer.Click += new System.EventHandler(this.btnCramer_Click);
             // 
             // btnAgudos
             // 

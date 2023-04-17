@@ -114,5 +114,15 @@ namespace Proyecto_Final_Verdadero
                 dplMenu(false);
             }
         }
+
+        private void btnCramer_Click(object sender, EventArgs e)
+        {
+            //Mostramos formulario en panel desde clase utileria
+            utl.MostrarForm(pnlPrincipal, new Forms.Cramer());
+            if (pnlMenu.Width == 280)
+            {
+                dplMenu(false);
+            }
+        }
     }
 }

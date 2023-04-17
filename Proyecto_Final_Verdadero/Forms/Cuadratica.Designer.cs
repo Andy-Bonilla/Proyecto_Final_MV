@@ -243,6 +243,7 @@
             // 
             // txtX1
             // 
+            this.txtX1.Enabled = false;
             this.txtX1.Font = new System.Drawing.Font("Lucida Sans", 34.8F, System.Drawing.FontStyle.Bold);
             this.txtX1.Location = new System.Drawing.Point(1185, 494);
             this.txtX1.Name = "txtX1";
@@ -252,6 +253,7 @@
             // 
             // txtX2
             // 
+            this.txtX2.Enabled = false;
             this.txtX2.Font = new System.Drawing.Font("Lucida Sans", 34.8F, System.Drawing.FontStyle.Bold);
             this.txtX2.Location = new System.Drawing.Point(1185, 607);
             this.txtX2.Name = "txtX2";

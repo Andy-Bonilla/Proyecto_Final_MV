@@ -93,5 +93,17 @@ namespace Proyecto_Final_Verdadero
             bnt.Font = fuente;
         }
 
+        /// <summary>
+        /// Función que limpia los txts enviados en un array ([])
+        /// </summary>
+        /// <param name="textos">array de textboxs</param>
+        public void LimpTxt(Control[] textos)
+        {
+            foreach (Control tx in textos)
+            {
+                tx.Text = "";
+            }
+        }
+
     }
 }
