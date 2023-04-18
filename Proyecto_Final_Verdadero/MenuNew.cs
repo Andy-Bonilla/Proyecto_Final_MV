@@ -124,5 +124,14 @@ namespace Proyecto_Final_Verdadero
                 dplMenu(false);
             }
         }
+
+        private void btnHerencia_Click(object sender, EventArgs e)
+        {
+            utl.MostrarForm(pnlPrincipal, new Forms.Herencia());
+            if (pnlMenu.Width == 280)
+            {
+                dplMenu(false);
+            }
+        }
     }
 }

@@ -26,6 +26,7 @@ namespace Proyecto_Final_Verdadero.Forms
 
         private void Cuadratica_Load(object sender, EventArgs e)
         {
+            SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             utl.StyleBtn(btnCalc, Color.White, Color.Black, 202, 95, true, Color.DarkGreen, 25, "Cooper Black");
             utl.StyleBtn(btnLimp, Color.White, Color.Black, 202, 95, true, Color.DarkRed, 25, "Cooper Black");
             utl.StyleBtn(btnRegre, Color.White, Color.Black, 125, 40, true, Color.DarkRed, 15, "Cooper Black");

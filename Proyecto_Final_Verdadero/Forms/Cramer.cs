@@ -18,6 +18,7 @@ namespace Proyecto_Final_Verdadero.Forms
 
         private void Cramer_Load(object sender, EventArgs e)
         {
+            SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             utl.StyleBtn(btnCalc, Color.White, Color.Black, 373, 90, true, Color.DarkGreen, 25, "Cooper Black");
             utl.StyleBtn(btnLimp, Color.White, Color.Black, 373, 90, true, Color.DarkRed, 25, "Cooper Black");
             utl.StyleBtn(btnRegre, Color.White, Color.Black, 125, 40, true, Color.DarkRed, 15, "Cooper Black");
@@ -85,6 +86,10 @@ namespace Proyecto_Final_Verdadero.Forms
         public Cramer()
         {
             InitializeComponent();
+            utl.txtSoloNumeros(txtA);
+            utl.txtSoloNumeros(txtB);
+            utl.txtSoloNumeros(txtC);
+            utl.txtSoloNumeros(txtD);
         }
 
         private void AsignarValores()

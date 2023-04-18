@@ -17,10 +17,13 @@ namespace Proyecto_Final_Verdadero.Forms
         public Angulos()
         {
             InitializeComponent();
+            utl.txtSoloNumeros(txtCa);
+            utl.txtSoloNumeros(txtCo);
         }
 
         private void Angulos_Load(object sender, EventArgs e)
         {
+            SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             utl.txtSoloNumeros(txtCo);
             utl.txtSoloNumeros(txtCa);
             txtCo.MaxLength = 2;

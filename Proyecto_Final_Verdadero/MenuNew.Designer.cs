@@ -128,6 +128,7 @@
             this.btnHerencia.TabIndex = 1;
             this.btnHerencia.Text = "Herencia";
             this.btnHerencia.UseVisualStyleBackColor = false;
+            this.btnHerencia.Click += new System.EventHandler(this.btnHerencia_Click);
             // 
             // btnCajero
             // 

@@ -21,6 +21,7 @@ namespace Proyecto_Final_Verdadero.Forms
 
         private void Creditos_Load(object sender, EventArgs e)
         {
+            SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.AllPaintingInWmPaint, true);
             utl.StyleBtn(btnRegre, Color.White, Color.Black, 125, 40, true, Color.DarkRed, 15, "Cooper Black");
             picb1.Width = 250;
             picb1.Height = 250;
