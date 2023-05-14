@@ -25,7 +25,7 @@ namespace Proyecto_Final_Verdadero.Forms
                 int[] diasPorMes = new int[12] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }; //Array de los dias por mes que tiene un año bisiesto
 
                 int mes = 0;//definimos mes en 0
-                while (dias > diasPorMes[mes]) //Mientras dias sea mayor al array de dias
+                while (dias > diasPorMes[mes]) //Mientras dias sea mayor al array de diasPorMes
                 {
                     dias -= diasPorMes[mes]; //restamos los días del mes actual
                     mes++; //sumamos un mes mas

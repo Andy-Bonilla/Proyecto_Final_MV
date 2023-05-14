@@ -28,7 +28,12 @@ namespace Proyecto_Final_Verdadero
         //Click en el boton para cerrar formulario
         private void pcbClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult resp = MessageBox.Show("Desea Salir del Sistema?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resp == DialogResult.Yes)
+            {
+                this.Close();
+            }
+
         }
 
         //Click en el boton para minimizar el formulario

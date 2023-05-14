@@ -16,5 +16,17 @@ namespace Proyecto_Final_Verdadero.Forms
         {
             InitializeComponent();
         }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            int[] numeros = new int[3];
+            numeros[0] = Convert.ToInt32(txtNum1.Text);
+            numeros[1] = Convert.ToInt32(txtNum2.Text);
+            numeros[2] = Convert.ToInt32(txtNum3.Text);
+
+            Array.Sort(numeros);
+
+            label3.Text = numeros[0] + " --- " + numeros[1] + " --- " + numeros[2];
+        }
     }
 }
