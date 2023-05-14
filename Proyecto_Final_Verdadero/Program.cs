@@ -16,7 +16,7 @@ namespace Proyecto_Final_Verdadero
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuNew());
+            Application.Run(new Forms.Bisiesto());
         }
     }
 }
